@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "img": "https://images.unsplash.com/photo-1616803689943-5601631c7fec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "title": "Push up",
+    "time": 40
+  },
+  {
+    "id": 2,
+    "img": "https://images.unsplash.com/photo-1597347316205-36f6c451902a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "title": "Pull up",
+    "time": 40
+  },
+  {
+    "id": 3,
+    "img": "https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    "title": "Walking",
+    "time": 40
+  },
+  {
+    "id": 4,
+    "img": "https://images.unsplash.com/photo-1532384555668-bc0c32a17ffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "title": "Dumbbell lift",
+    "time": 40
+  },
+  {
+    "id": 5,
+    "img": "https://images.unsplash.com/photo-1623946724822-ba48a838f3da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "title": "Squat",
+    "time": 40
+  },
+  {
+    "id": 6,
+    "img": "https://images.unsplash.com/photo-1598268030450-7a476f602bf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80",
+    "title": "Biceps curl",
+    "time": 30
+  }
+]
