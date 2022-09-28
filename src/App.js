@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h2>Workout Mind</h2>
+      <h2><i class="fa-solid fa-dumbbell"></i> Workout Mind</h2>
     </div>
   );
 }
