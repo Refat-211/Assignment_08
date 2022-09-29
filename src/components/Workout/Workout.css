@@ -28,8 +28,16 @@
     padding: 10px;
 }
 .btn{
+    color: white;
     padding: 10px;
-    border-radius: 50%;
+    margin: 3px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 40%;
+}
+.btn:hover{
+    background-color: blue;
+    color: white;
 }
 .exercise-details{
     color: white;
@@ -44,6 +52,9 @@
     border: none;
     border-radius: 7px;
     background-color: blueviolet;
+}
+.btn-completed:hover{
+    background-color: blue;
 }
 
 

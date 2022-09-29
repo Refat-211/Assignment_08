@@ -36,7 +36,7 @@ const Workout = () => {
             <div className='activity-container'>
                 <div className='my-info'>
                     <h2>Refat Hassan</h2>
-                    <i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh
+                    <i className="fa-solid fa-location-dot"></i> Dhaka, Bangladesh
                     <p>Weight: 58kg</p>
                     <p>Height: 5.6</p>
                     <p>Age: 27yrs</p>
