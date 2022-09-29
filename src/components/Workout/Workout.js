@@ -16,7 +16,7 @@ const Workout = () => {
     }, [])
 
     useEffect( () => {
-        console.log(localStorage.getItem("addbreak"));
+        // console.log(localStorage.getItem("addbreak"));
         if (localStorage.getItem("addbreak")){
             setAddBreak(localStorage.getItem("addbreak"))
         }
@@ -33,7 +33,7 @@ const Workout = () => {
     }
 
     const handleCompletedButton = () =>{
-        console.log('clicked');
+        // console.log('clicked');
         localStorage.removeItem("addbreak")
         setAddBreak(0)
         setTime(0)

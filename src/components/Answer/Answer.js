@@ -12,8 +12,10 @@ const Answer = () => {
                 <h2>2. What is the difference between props and state in react?</h2>
                 <p>Ans: Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. Props are read-only. State is both read and write. Props is Immutable. Its cannot be modified. State is Mutable. It can be modified.</p>
             </div>
-            <h2></h2>
-            <p></p>
+            <div>
+                <h2>3. What is the useEffect used for?</h2>
+                <p>Ans: useEffect accepts two arguments. The second argument is optional. we set second argument as a variable, expression etc. The useEffect allows to perform side effects in components. useEffect runs on every render. That means that when the count changes, a render happens, which then triggers another effect. We should always include the second parameter which accepts an array. We can optionally pass dependencies to useEffect in this array.</p>
+            </div>
         </div>
     );
 };
