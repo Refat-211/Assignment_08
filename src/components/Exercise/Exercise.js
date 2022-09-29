@@ -2,7 +2,9 @@ import React from 'react';
 import './Exercise.css'
 
 const Exercise = (props) => {
+    const {handleAddToList} = props;
     const {img, title, time} = props.exercise;
+    
     return (
         <div className='exercise'>
             <div>
@@ -11,7 +13,7 @@ const Exercise = (props) => {
             <p className='exercise-age'>For Age: 20-25</p>
             <p className='exercise-time'>Time required: {time}s</p>
             </div>
-            <button className='btn-list'>
+            <button onClick={() => handleAddToList(props.exercise)} className='btn-list'>
                 <h4>Add to List</h4>
             </button>
         </div>

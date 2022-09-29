@@ -1,7 +1,7 @@
 .workout-container{
     display: grid;
     margin-top: 20px;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .exercise-container{
@@ -12,11 +12,45 @@
     margin-bottom: 10px;
 }
 
+.activity-container {
+    background-color: rgb(180, 211, 200);
+    border: 1px solid rgb(180, 211, 200);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.my-info{
+    background-color: antiquewhite;
+}
+.btn-break{
+    background-color: brown;
+    padding: 10px;
+}
+.btn{
+    padding: 10px;
+    border-radius: 50%;
+}
+.exercise-details{
+    color: white;
+    font-size: 20px;
+    padding: 1px;
+    margin-bottom: 3px;
+    background-color: brown;
+}
+.btn-completed{
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: blueviolet;
+}
+
 
 @media only screen and (max-width: 767px){
     .workout-container{
         display: grid;
-        grid-template-columns: 5fr;
+        grid-template-columns: 4fr;
     }
     .exercise-container{
         display: grid;
@@ -26,5 +60,11 @@
         margin: auto;
         align-items: center;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .exercise-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
