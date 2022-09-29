@@ -1,0 +1,9 @@
+.answer{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    color: white;
+    padding: 30px 80px;
+    background-color: rgb(65, 70, 70);
+    text-align: center;
+    margin: 20px 0px;
+}

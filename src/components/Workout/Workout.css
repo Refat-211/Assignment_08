@@ -1,6 +1,7 @@
 .workout-container{
     padding: 15px;
     display: grid;
+    background-color: rgb(65, 70, 70);
     padding: 20px auto;
     grid-template-columns: 3fr 1fr;
 }
@@ -23,6 +24,9 @@
 
 .my-info{
     background-color: antiquewhite;
+}
+.my-info h2{
+    margin: 0px;
 }
 .btn-break{
     background-color: brown;
