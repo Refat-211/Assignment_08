@@ -1,9 +1,12 @@
 import './App.css';
+import Header from './components/Header/Header';
+import Workout from './components/Workout/Workout';
 
 function App() {
   return (
-    <div className="App">
-      <h2><i class="fa-solid fa-dumbbell"></i> Workout Mind</h2>
+    <div>
+      <Header></Header>
+      <Workout></Workout>
     </div>
   );
 }
