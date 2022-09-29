@@ -1,9 +1,11 @@
 import React from 'react';
+import './Exercise.css'
 
-const Exercise = () => {
+const Exercise = (props) => {
+    const {img, title, time} = props.exercise;
     return (
-        <div>
-            <h2>this is product</h2>
+        <div className='exercise'>
+            <img src={img} alt="" />
         </div>
     );
 };
