@@ -5,6 +5,7 @@ import './Workout.css'
 const Workout = () => {
     const [exercise, setExercise] = useState([]);
     const [time, setTime] = useState(0);
+    const [addbreak, setAddBreak] = useState(0);
 
 
     useEffect( () => {
@@ -15,6 +16,10 @@ const Workout = () => {
 
     const handleAddToList = (props) =>{
         setTime(time + props)
+    }
+
+    const handleAddBreak = (props) =>{
+        setAddBreak(props)
     }
 
     return (
@@ -39,16 +44,16 @@ const Workout = () => {
                 </div>
                 <h2>Add A Break</h2>
                 <div className='btn-break'>
-                    <button className='btn'>10s</button>
-                    <button className='btn'>20s</button>
-                    <button className='btn'>30s</button>
-                    <button className='btn'>40s</button>
-                    <button className='btn'>50s</button>
+                    <button onClick={() => handleAddBreak(10)} className='btn'>10s</button>
+                    <button onClick={() => handleAddBreak(20)} className='btn'>20s</button>
+                    <button onClick={() => handleAddBreak(30)} className='btn'>30s</button>
+                    <button onClick={() => handleAddBreak(40)} className='btn'>40s</button>
+                    <button onClick={() => handleAddBreak(50)} className='btn'>50s</button>
                 </div>
                 <h2>Exercise Details</h2>
                 <div className='exercise-details'>
                     <p>Exercise time: {time} seconds</p>
-                    <p>Break time: seconds</p>
+                    <p>Break time: {addbreak} seconds</p>
                 </div>
                 <button className='btn-completed'>Activity Completed</button>
             </div>
