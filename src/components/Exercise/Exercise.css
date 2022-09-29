@@ -1,4 +1,44 @@
+.exercise{
+    width: 245px;
+    height: 330px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: rgb(15, 35, 35);
+    position: relative;
+}
+
 .exercise img{
     width: 230px;
     height: 140px;
+    border-radius: 8px;
+    margin: 7px;
+}
+.exercise-title{
+    color: white;
+    margin-top: 2px;
+    margin-left: 7px;
+    margin-bottom: 2px;
+}
+.exercise-age{
+    color: white;
+    font-weight: 500;
+    margin-left: 7px;
+}
+.exercise-time{
+    color: white;
+    font-weight: 500;
+    margin-left: 7px;
+}
+.btn-list{
+    width: 100%;
+    background-color: rgb(230, 76, 20);
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+.btn-list:hover{
+    color: black;
+    background-color: rgb(203, 234, 25);
 }
