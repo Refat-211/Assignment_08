@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 import './Workout.css'
+import Swal from 'sweetalert2'
 
 const Workout = () => {
     const [exercise, setExercise] = useState([]);
@@ -14,12 +15,35 @@ const Workout = () => {
         .then(data => setExercise(data))
     }, [])
 
+    useEffect( () => {
+        console.log(localStorage.getItem("addbreak"));
+        if (localStorage.getItem("addbreak")){
+            setAddBreak(localStorage.getItem("addbreak"))
+        }
+        
+    }, [localStorage.getItem("addbreak")])
+
     const handleAddToList = (props) =>{
         setTime(time + props)
     }
 
-    const handleAddBreak = (props) =>{
-        setAddBreak(props)
+    const handleAddBreak = (breakTime) =>{
+        localStorage.setItem("addbreak", breakTime)
+        setAddBreak(breakTime)
+    }
+
+    const handleCompletedButton = () =>{
+        console.log('clicked');
+        localStorage.removeItem("addbreak")
+        setAddBreak(0)
+        setTime(0)
+        Swal.fire({
+            position: "top-center",
+            icon: "success",
+            title: "Activity Completed",
+            showConfirmButton: false,
+            timer: 2000,
+        });
     }
 
     return (
@@ -55,7 +79,7 @@ const Workout = () => {
                     <p>Exercise time: {time} seconds</p>
                     <p>Break time: {addbreak} seconds</p>
                 </div>
-                <button className='btn-completed'>Activity Completed</button>
+                <button onClick={() => handleCompletedButton()} className='btn-completed'>Activity Completed</button>
             </div>
         </div>
     );

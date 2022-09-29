@@ -1,16 +1,13 @@
 .exercise{
-    width: 245px;
-    height: 330px;
     border: 1px solid gray;
     border-radius: 8px;
     background-color: rgb(15, 35, 35);
 }
 
 .exercise img{
-    width: 230px;
+    width: 100%;
     height: 140px;
     border-radius: 8px;
-    margin: 7px;
 }
 .exercise-title{
     color: white;
