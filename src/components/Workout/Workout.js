@@ -4,8 +4,8 @@ import './Workout.css'
 
 const Workout = () => {
     const [exercise, setExercise] = useState([]);
-    const [activitys, setActivitys] = useState([]);
-    const [] = useState([]);
+    const [time, setTime] = useState(0);
+
 
     useEffect( () => {
         fetch('data.json')
@@ -13,10 +13,8 @@ const Workout = () => {
         .then(data => setExercise(data))
     }, [])
 
-    const handleAddToList = (exercise) =>{
-        console.log(exercise);
-        const exerciseTime = [...activitys, exercise]
-        setActivitys(exerciseTime);
+    const handleAddToList = (props) =>{
+        setTime(time + props)
     }
 
     return (
@@ -49,13 +47,10 @@ const Workout = () => {
                 </div>
                 <h2>Exercise Details</h2>
                 <div className='exercise-details'>
-                    <p>Exercise time: </p>
-                    <p>Break time: </p>
+                    <p>Exercise time: {time} seconds</p>
+                    <p>Break time: seconds</p>
                 </div>
                 <button className='btn-completed'>Activity Completed</button>
-                {
-                    activitys.map(activity => <p>Exercise time: {activity.time}</p>)
-                }
             </div>
         </div>
     );
