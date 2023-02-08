@@ -27,13 +27,12 @@
 }
 .btn-list{
     width: 100%;
-    background-color: rgb(230, 76, 20);
+    background-color: blueviolet;
     border-radius: 0px 0px 8px 8px;
     border: none;
     bottom: 0;
     color: white;
 }
 .btn-list:hover{
-    color: black;
-    background-color: rgb(203, 234, 25);
+    background-color: blue;
 }
