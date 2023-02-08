@@ -1,8 +1,7 @@
 .workout-container{
-    padding: 15px;
     display: grid;
     background-color: rgb(54, 55, 55);
-    padding: 20px auto;
+    padding: 20px;
     grid-template-columns: 3fr 1fr;
 }
 
